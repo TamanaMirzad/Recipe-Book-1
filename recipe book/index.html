@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <style>
+        /*  style.css */
+.navbar{
+    background-color: #1e1e2f;
+    padding: 1rem 2rem;
+    box-shadw: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  /* menu list */
+  .nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  /*item menu */
+  .nav-menu li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  /* hover item */
+  .nav-menu li a : hover{
+    color: #oobcd4;
+  }
+  
+  .recipe-card{
+          background-color:#1f1f1f1;
+          color: #dcd0ff;
+          border-left:4px solid #a34bff;
+          padding:20px;
+          margin: 20px auto;
+          max-width:400px;
+          border-radius:10px;
+        }
+        .recipe-card h2{
+          font-size:16px;
+          margin-bottom:10px;
+        }
+        .recipe-card p{
+          font-size: 16px;
+          margin-bottom:15px;
+          line-height:1.6;
+        }
+        .recipe-card img{
+          width: 100%;
+          border-radius:8px;
+          margin-bottom:15px;
+        }
+        .btn{
+          display:inline-block;
+          color:#dcd0ff;
+          border: 1px solid #a34bff;
+          padding:10px 15px;
+          border-radius:6px;
+          text-decoration:none;
+          transition:0.3s;
+
+        }
+        .btn: hover{
+          background-color:#a34bff;
+          color: #1f1f1f;
+        }
+
+        .footer{
+    background-color: #1e1e2f;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top:2rem;
+  }
+  .footer-content{
+    max-width:1000px;
+    margin: 0 auto;
+  }
+  .footer-links{
+    list-style:none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  
+  .footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;s
+
+  }
+  .footer-links li a : hover{
+    color:#00bcd4;
+  }
+
+    </style>
+</head>
+<body>
+     <nav class="navbar">
+        <ul class="nav-menu">
+    
+              <li><a href="#">Home</a></li>
+              <li><a href="add-recipe.html">Add Recipe</a></li>
+              <li><a href="recipe-list.html">Recipe List</a></li>
+ 
+        </ul>
+      </nav>
+ 
+
+        <h1> Welcome to My Recipe Book</h1>
+        <p><strong>Explore delicious Recipe for every occasion!</strong></p>
+          <h2> Fried fish</h2>
+          <p> Fried Fish is a traditional and delicious Iranian dish often served with rice or bread. it is usually made with white fish, trout, or southern fish varieties.</p>
+          <img src="photo.jpg" alt="fish food" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+  
+          <h2> Pizza</h2>
+          <p> A Slice You will Never Forget!
+            Take one bite of our pizza and get ready to fall in love!
+          </p>
+          <img src="photo 1.jpg" alt="Pizza" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+          
+          
+          <h1>Featured Categories</h1>
+          <ol>
+              <li><a href="#">Desserts</a></li>
+              <li><a href="#">Vegan</a></li>
+              <li><a href="#">Quick Meals</a></li>
+          </ol>
+
+
+        <footer class="footer">
+          <div class="footer-content">
+            <ul class="footer-links">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">service</a></li>
+              <li><a href="#">conntect</a></li>
+              <hr>
+              <p>Designed with love by<strong>Tamana Mirzad</strong></p>
+            </ul>
+            </div>
+            </footer>
+            
+</body>
+</html>
