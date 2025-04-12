@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List Page</title>
+    <style>
+        /*  style.css */
+.navbar{
+    background-color: #1e1e2f;
+    padding: 1rem 2rem;
+    box-shadw: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  /* menu list */
+  .nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  /*item menu */
+  .nav-menu li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  /* hover item */
+  .nav-menu li a : hover{
+    color: #oobcd4;
+  }
+  .footer{
+    background-color: #1e1e2f;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top:2rem;
+  }
+  .footer-content{
+    max-width:1000px;
+    margin: 0 auto;
+  }
+  .footer-links{
+    list-style:none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+
+  }
+  .footer-links li a : hover{
+    color:#00bcd4;
+  }
+
+    </style>
+</head>
+<body>
+  <h1>Recipe Gallery</h1>
+  <p>Explore a variety of recipe to try and enjoy!</p>
+    <nav class="navbar">
+        <ul class="nav-menu">
+
+              <li><a href="#">Home</a></li>
+              <li><a href="add-recipe.html">Add Recipe </a></li>
+              <li><a href="recipe-list.html"> Recipe Lists</a></li>
+        
+            </ul>
+        </nav><br><br><br>
+        <h1>Explore our recipe collection</h1>
+
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="Drinks">Drinks</option>
+          <option value="Snacks">Snacks</option>
+          <option value="appetizers">Appetizers</option>
+        </select>
+        
+          <h2> Fried fish</h2>
+          <p> Fried Fish is a traditional and delicious Iranian dish often served with rice or bread. it is usually made with white fish, trout, or southern fish varieties.</p>
+          <img src="photo.jpg" alt="fish food" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+  
+          <h2> Pizza</h2>
+          <p> A Slice You will Never Forget!
+            Take one bite of our pizza and get ready to fall in love!
+          </p>
+          <img src="photo 1.jpg" alt="Pizza" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+
+          <h2> Rotisserie Chicken </h2>
+          <p> Crispy.Juicy. Unforgettable!
+            Treat yourself to our perfectly roasted chicken golden on the outside, tender and flavorful on the inside.Marinated 
+            with a special blend of spices and slow roasted to perfection, it is a taste that speaks for itself.
+            one bite,and you will be hooked.
+          </p>
+          <img src="photo 2.jpg" alt="Rotisserie" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+
+          <h2> Homemade Burger </h2>
+          <p> Sink your teeth into our sizzling homemade burger- grilled to perfection and stacked with flavor.
+            one bite is all it takes.
+          </p>
+          <img src="photo 3.jpg" alt="Homemade Burger" height="300px" width="300px"><br>
+          <a href="recipe-details.html" class="btn">View Full Recipe</a>
+          
+        <footer class="footer">
+            <div class="footer-content">
+              <ul class="footer-links">
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">service</a></li>
+                <li><a href="">conntect</a></li>
+                <hr>
+                <p>Designed with love by<strong>Tamana Mirzad</strong></p>
+              </ul>
+              </div>
+              </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <style>
+        /*  style.css */
+.navbar{
+    background-color: #1e1e2f;
+    padding: 1rem 2rem;
+    box-shadw: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  /* menu list */
+  .nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  /*item menu */
+  .nav-menu li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  /* hover item */
+  .nav-menu li a : hover{
+    color: #oobcd4;
+  }
+  .footer{
+    background-color: #1e1e2f;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top:2rem;
+  }
+  .footer-content{
+    max-width:1000px;
+    margin: 0 auto;
+  }
+  .footer-links{
+    list-style:none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .footer-links li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+
+  }
+  .footer-links li a : hover{
+    color:#00bcd4;
+  }
+
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2d3436;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #dcdde1;
+}
+
+.dropdown-content a:hover {
+  background-color: #dfe6e9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #574b90;
+}
+
+
+    </style>
+</head>
+<body>
+  <h1>Add your Recipe To Our Collection</h1>
+  <p>Fill out the form below to submit your recipe and share your cooking secrers with the world!</p>
+    <nav class="navbar">
+        <ul class="nav-menu">
+
+              <li><a href="#">Home</a></li>
+              <li><a href="add-recipe.html">Add Recipe</a></li>
+              <li><a href="recipe-list.html"> Recipe Lists</a></li>
+        
+            </ul>
+        </nav>
+        <p>Submit Your Recipe</p>
+    <form>
+        <label for="Recipe Name">Recipe Name</label>
+        <input type="text" id="Recipe Name"required> <br>
+
+        <label for="Ingredients">What Ingredients did you need?</label><br>
+        <textarea id ="Ingredients" name="Ingredients" rows="5" cols="40" placeholder="type your mesage" required> </textarea><br>
+
+        
+
+        <label for="Cooking Instructions">Cooking Instructions</label><br>
+        <textarea id="Cooking Instructions" name="Cooking Instructions" rows="5" cols="40"></textarea> <br>
+
+        <label for="Img URL">Link to an image that shows your dish.</label><br>
+        <input type="File" id="Img URL"/><br>
+        <label for="Cooking Instructions">Recipe Category</label><br>
+      
+        <div class="dropdown">
+          <button class="dropbtn">select a Recipe</button>
+          <div class="dropdown-content">
+            <a href="#fried fish">Fried Fish</a>
+            <a href="#pizza">Pizza</a>
+            <a href="#roast chicken">Roast Chicken</a>
+            <a href="#burger">Burger</a>
+            </div>
+            </div><br><br>
+
+        <button type="submit">Add Recipe</button>
+      </form>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <ul class="footer-links">
+            <li><a href="">home</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">service</a></li>
+            <li><a href="">conntect</a></li>
+            <hr>
+            <p>Designed with love by<strong>Tamana Mirzad</strong></p>
+        
+          </ul>
+          </div>
+          </footer>
+</body>
+</html>
